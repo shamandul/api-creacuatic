@@ -1,0 +1,32 @@
+.img-admin{
+    height: 80vh;
+    background-size: 90vh;
+    background-repeat: no-repeat;
+    background-image: url('img/admin-3.svg');
+    background-position: center center ;
+}
+
+.img-info{
+    height: 80vh;
+    background-size: 90vh;
+    background-repeat: no-repeat;
+    background-image: url('img/info.svg');
+}
+.img-cursos{
+    height: 80vh;
+    background-size: 90vh;
+    background-repeat: no-repeat;
+    background-image: url('img/cursos.svg');
+}
+.img-noticias{
+    height: 80vh;
+    background-size: 90vh;
+    background-repeat: no-repeat;
+    background-image: url('img/noticias.svg');
+}
+.img-security{
+    height: 80vh;
+    background-size: 50vh;
+    background-repeat: no-repeat;
+    background-image: url('img/security.svg');
+}

@@ -1,0 +1,28 @@
+<%- include ('../partials/_header.ejs') -%>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/noticias/update/<%= data.id %>" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="titular" class="form-control" value="<%= data.titular %>">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="descripcion" class="form-control" value="<%= data.descripcion %>">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="likes" class="form-control" value="<%= data.likes %>">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Actualizar noticias</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include ('../partials/_footer.ejs') -%>

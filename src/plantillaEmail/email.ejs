@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 10px;
+        }
+        body{
+            background-color: #99c5a3;
+            color: #000000;
+            background-image: url('http://webweaver.es/images/ask.svg');
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-position-x: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Nuevo mensaje </h1>
+    </div>
+    <div class="datos">
+        <p>Nombre: <span><%= nombre %></span></p>
+        <p>Teléfono: <span><%= telefono %></span></p>
+        <p>Correo: <span><%= email %></span></p>
+        <h2>Consulta</h2>
+        <p><span><%= texto %></span></p>
+    </div>
+    
+</body>
+</html>

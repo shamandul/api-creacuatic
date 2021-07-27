@@ -1,0 +1,77 @@
+<%- include ('../partials/_header.ejs') -%>
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-7">
+      <% if(data.length > 0) { %>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>Nombre Curso</th>
+            <th>Alumnos</th>
+            <th>Likes</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for(var i= 0;i < data.length; i++) {%>
+          <tr>
+            <td><%= data[i].nombre_curso %></td>
+            <td><%= data[i].alumnos %></td>
+            <td><%= data[i].likes %></td>
+            <td>
+              <a href="/cursos/delete/<%= data[i].id %>" class="btn btn-danger"
+                >Eliminar</a
+              >
+              <a href="/cursos/update/<%= data[i].id %>" class="btn btn-info"
+                >Actualizar</a
+              >
+            </td>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+      <% }else{ %>
+      <div class="img-cursos"></div>
+      <% } %>
+    </div>
+    <div class="col-md-5">
+      <div class="card">
+        <div class="card-body">
+          <form action="/cursos/add" method="POST">
+            <div class="form-group">
+              <input
+                type="text"
+                name="nombre_curso"
+                class="form-control"
+                placeholder="Nombre del curso"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="alumnos"
+                class="form-control"
+                placeholder="Número de alumnos"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="likes"
+                class="form-control"
+                placeholder="Número de likes"
+              />
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">
+                Guardar curso
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include ('../partials/_footer.ejs') -%>

@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Abril Fatface", cursive;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  background-image: url("../img/acua.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  float: left;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+}
+
+.content .description {
+  width: 100vw;
+}
+
+.description h1 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 4em;
+}
+
+.description h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin-top: 20vh;
+  font-size: 2em;
+}
+
+.description h5 {
+  color: #fff;
+  text-align: center;
+  margin-top: 20vh;
+  font-size: 1.2em;
+}
